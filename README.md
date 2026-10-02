@@ -21,7 +21,7 @@
     - Least-privilege IAM roles and narrowly scoped service policies.
     - Consistent tagging, naming, retention, and environment separation.
     - CI checks for formatting, validation, linting, and IaC security scanning.
-    - Security documentation, architecture notes, and example module usage.
+    - Security documentation, architecture notes, and reusable module structure.
 
     ## Quick start
 
@@ -32,11 +32,9 @@
     terraform plan -out=tfplan
     ```
 
-    Use `examples/standard` as the caller pattern for this template.
-
     ## Production hardening checklist
 
-    - Replace example CIDR ranges, ARNs, domain names, and retention windows.
+    - Replace placeholder CIDR ranges, ARNs, domain names, and retention windows.
     - Connect remote state with state locking before team usage.
     - Review every IAM trust relationship against your account structure.
     - Enable branch protection and required CI checks in GitHub.
@@ -44,6 +42,6 @@
 
     ## Repository intent
 
-    This repository is designed as a professional AWS infrastructure portfolio
-    sample. It favors clear architecture, security defaults, and reviewable
-    Terraform over one-click deployment magic.
+    This repository is designed as a professional AWS infrastructure template.
+    It favors clear architecture, security defaults, and reviewable Terraform
+    over one-click deployment magic.
